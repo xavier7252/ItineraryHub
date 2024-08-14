@@ -1,0 +1,86 @@
+.my-itineraries{
+  text-align: center;
+  background-color: rgb(243, 233, 234);
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.my-itineraries .main-body {
+}
+
+
+.itineraries-box {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  overflow: hidden;
+  max-width: 100%;
+  padding: 20px;
+}
+
+.itinerary-card-wrapper {
+  position: relative;
+}
+
+.delete-checkbox {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transform: scale(1.5);
+}
+
+/* Larger screens */
+@media (max-width: 2400px) {
+  .itineraries-box {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+@media (max-width: 2000px) {
+  .itineraries-box {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: 1600px) {
+  .itineraries-box {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/* Medium screens */
+@media (max-width: 1200px) {
+  .itineraries-box {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Smaller screens */
+@media (max-width: 900px) {
+  .itineraries-box {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .itineraries-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 350px) {
+  .itineraries-box {
+    grid-template-columns: 1fr;
+  }
+}

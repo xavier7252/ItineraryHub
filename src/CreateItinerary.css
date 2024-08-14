@@ -1,0 +1,46 @@
+.create-itinerary {
+  background-color: rgb(243, 233, 234);
+  min-height: 100vh;
+}
+
+.top-row {
+  height: 5vh;
+  width: 100%;
+  padding: 10px 0px;
+  margin: 0 !important;
+}
+
+.logo-box {
+  float: left;
+  margin-left: 10px;
+}
+
+.profile-box {
+  float: right;
+  margin-right: 10px;
+}
+
+.person-icon {
+  margin-right: 5px;
+}
+
+.main-body {
+  display: grid;
+  justify-content: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.first-question,
+.second-question,
+.third-question,
+.fourth-question {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.create-button-box {
+  margin-top: 20px;
+  color: aqua;
+}

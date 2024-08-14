@@ -1,0 +1,265 @@
+.create-itinerary {
+  background-color: rgb(243, 233, 234);
+  min-height: 100vh;
+}
+
+.top-row {
+  height: 5vh;
+  width: 100%;
+  padding: 10px 0px;
+  margin: 0 !important;
+}
+
+.logo-box {
+  float: left;
+  margin-left: 10px;
+}
+
+.profile-box {
+  float: right;
+  margin-right: 10px;
+}
+
+.person-icon {
+  margin-right: 5px;
+}
+
+.main-body {
+  display: grid;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.main-body h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.bubble-1 .MuiButtonBase-root,
+.bubble-2 .MuiButtonBase-root,
+.bubble-3 .MuiButtonBase-root {
+  width: 100%;
+}
+
+.bubble-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* Allows bubbles to wrap onto multiple lines */
+  justify-content: space-between;
+  /* Distributes bubbles evenly across the container */
+  gap: 10px;
+  /* Adds space between bubbles */
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.bubble-1,
+.bubble-2,
+.bubble-3 {
+  width: 100%;
+  /* Makes each bubble fill the width of the page */
+  margin-top: 5px;
+  /* Adds space between the bubbles */
+}
+
+.title-and-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid #f5ced2;
+  border-radius: 30px;
+  background-color: #f2dcdf;
+}
+
+.title-section,
+.country-section,
+.duration-section,
+.description-section {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #f5ced2;
+  /* Optional: Add border between sections */
+  position: relative;
+  /* For positioning the Edit button */
+}
+
+.MuiAutocomplete-clearIndicator {
+  display: none;
+}
+
+.image-section {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+  position: relative;
+  /* For positioning the Edit button */
+}
+
+.details {
+  margin: 0 !important;
+}
+
+.input-image {
+  margin: 10px 0;
+  width: 14vw;
+  /* Relative to the viewport width */
+  max-width: 100%;
+  /* Ensures it doesn’t exceed the container width */
+}
+
+.uploaded-image-preview {
+  max-width: 150px;
+  /* Fixed width to ensure the image preview is small */
+  max-height: 150px;
+  /* Fixed height for the square shape */
+  overflow: hidden;
+  /* Hide overflow to maintain the square shape */
+  border: 1px solid #ccc;
+  /* Optional: adds a border around the image preview */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.uploaded-image {
+  width: 100%;
+  /* Ensures the image scales to the container width */
+  height: 100%;
+  /* Ensures the image scales to the container height */
+  object-fit: cover;
+  /* Ensures the image covers the container without distortion */
+}
+
+.image-buttons-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0 !important;
+  position: absolute;
+  right: 10px;
+}
+
+.title-section h4,
+.country-section h4,
+.duration-section h4,
+.description-section h4,
+.image-section h4 {
+  margin: 0;
+  font-weight: bold;
+  width: 160px;
+  /* Adjust width as needed */
+  text-align: left;
+  /* Align heading text to the left */
+  padding-left: 20px;
+  /* Add left margin to the heading */
+}
+
+.title-section div,
+.country-section div,
+.duration-section div,
+.description-section div,
+.image-section div {
+  margin-left: 10px;
+  /* Space between heading and content */
+  flex-grow: 1;
+  /* Allow content to take up remaining space */
+}
+
+.title-section .MuiButton-root,
+.description-section .MuiButton-root {
+  right: 10px;
+  /* Adjust spacing from the right edge */
+  margin-left: auto;
+  /* Push the button to the right edge */
+  width: fit-content;
+}
+
+.duration-section .MuiButton-root,
+.country-section .MuiButton-root {
+  right: 10px;
+  /* Adjust spacing from the right edge */
+  margin-left: auto;
+  /* Push the button to the right edge */
+  width: fit-content;
+  visibility: hidden;
+}
+
+.set-image-button {
+  margin: 10px;
+  align-self: flex-start;
+  /* Align button to the left */
+}
+
+.next-button-box {
+  margin-top: 20px;
+  color: aqua;
+}
+
+
+.render-button-list {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  overflow: hidden;
+  max-width: 100%;
+  padding: 20px;
+}
+
+/* Larger screens */
+@media (max-width: 2400px) {
+  .render-button-list {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+@media (max-width: 2000px) {
+  .render-button-list {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: 1600px) {
+  .render-button-list {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/* Medium screens */
+@media (max-width: 1200px) {
+  .render-button-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Smaller screens */
+@media (max-width: 900px) {
+  .render-button-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .render-button-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 350px) {
+  .render-button-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.button {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}

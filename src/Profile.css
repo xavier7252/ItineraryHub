@@ -1,0 +1,161 @@
+.profile-page {
+  background-color: rgb(243, 233, 234);
+  min-height: 100vh;
+}
+
+.top-row {
+  height: 5vh;
+  width: 100%;
+  padding: 10px 0px;
+  margin: 0 !important;
+}
+
+.logo-box {
+  float: left;
+  margin-left: 10px;
+}
+
+.profile-box {
+  float: right;
+  margin-right: 10px;
+}
+
+.person-icon {
+  margin-right: 5px;
+}
+
+.main-body {
+  display: grid;
+  justify-content: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.profile-title {
+  font-size: 35px;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.profile-image-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 20vw;
+  margin-top: 20vh;
+}
+
+.profile-image {
+  width: 250px;
+  height: 250px;
+  cursor: pointer;
+}
+
+.profile-image:hover {
+  opacity: 0.6;
+}
+
+.profile-details-box {
+  display: grid;
+  height: fit-content;
+  margin-top: 5vh;
+  width: 55vw;
+
+  border: 1px;
+  border-style: solid;
+  border-color: grey;
+  border-radius: 10px;
+
+}
+
+.profile-name-box {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  border-bottom: 1px solid rgba(24, 23, 23, 0.253);
+}
+
+.profile-name-category {
+  padding: 10px;
+  font-size: 18px;
+  width: fit-content;
+  margin-left: 1vw;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.profile-username-box {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  border-bottom: 1px solid rgba(24, 23, 23, 0.253);
+}
+
+.profile-username-category {
+  padding: 10px;
+  font-size: 18px;
+  width: fit-content;
+  margin-left: 1vw;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.profile-email-box {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  border-bottom: 1px solid rgba(24, 23, 23, 0.253);
+}
+
+.profile-email-category {
+  padding: 10px;
+  font-size: 18px;
+  width: fit-content;
+  margin-left: 1vw;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.profile-gender-box {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  /* border-bottom: 1px solid rgba(24, 23, 23, 0.253); */
+}
+
+.profile-gender-category {
+  padding: 10px;
+  font-size: 18px;
+  width: fit-content;
+  margin-left: 1vw;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.profile-email-user,
+.profile-name-user,
+.profile-gender-user,
+.profile-username-user {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-icon-box {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-icon {
+  cursor: pointer;
+}
+
+.save-icon {
+  cursor: pointer;
+}
+
+.sign-out-button-box {
+  margin-top: 10px;
+}
+
+.sign-out-button {
+  cursor: pointer;
+}

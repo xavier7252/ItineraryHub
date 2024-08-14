@@ -1,0 +1,202 @@
+.itinerary-day-details {
+  background-color: rgb(243, 233, 234);
+  min-height: 100vh;
+}
+
+.top-row {
+  height: 5vh;
+  width: 100%;
+  padding: 10px 0px;
+  margin: 0 !important;
+}
+
+.logo-box {
+  float: left;
+  margin-left: 10px;
+}
+
+.profile-box {
+  float: right;
+  margin-right: 10px;
+}
+
+.person-icon {
+  margin-right: 5px;
+}
+
+.itinerary-day-details h4 {
+  margin-bottom: 0.2rem !important;
+  margin-top: 0.2rem !important;
+}
+
+.itinerary-day-details-card-description,
+.itinerary-day-details-card-summary,
+.itinerary-day-details-card-title {
+  display: grid;
+  max-width: 80vw;
+  box-sizing: border-box;
+  /* Ensures padding and border are included in width */
+
+}
+
+.itinerary-day-details-card-image-upload {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* Centers the text and button inside */
+}
+
+.input-image {
+  margin: 10px 0;
+  width: 14vw;
+  /* Relative to the viewport width */
+  max-width: 100%;
+  /* Ensures it doesn’t exceed the container width */
+}
+
+
+.title-section,
+.country-section,
+.duration-section,
+.description-section,
+.summary-section {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #f5ced2;
+  /* Optional: Add border between sections */
+  position: relative;
+  /* For positioning the Edit button */
+}
+
+
+.title-section h4,
+.country-section h4,
+.duration-section h4,
+.description-section h4,
+.image-section h4,
+.summary-section h4 {
+  margin: 0;
+  font-weight: bold;
+  width: 160px;
+  /* Adjust width as needed */
+  text-align: left;
+  /* Align heading text to the left */
+  padding-left: 20px;
+  /* Add left margin to the heading */
+}
+
+.title-section div,
+.country-section div,
+.duration-section div,
+.description-section div,
+.image-section div,
+.summary-section div {
+  margin-left: 10px;
+  /* Space between heading and content */
+  flex-grow: 1;
+  /* Allow content to take up remaining space */
+}
+
+.title-section .MuiButton-root,
+.description-section .MuiButton-root,
+.summary-section .MuiButton-root {
+  right: 10px;
+  /* Adjust spacing from the right edge */
+  margin-left: auto;
+  /* Push the button to the right edge */
+  width: fit-content;
+}
+
+.uploaded-image-preview {
+  margin-top: 10px;
+  max-width: 150px;
+  /* Fixed width to ensure the image preview is small */
+  max-height: 150px;
+  /* Fixed height for the square shape */
+  overflow: hidden;
+  /* Hide overflow to maintain the square shape */
+  border: 1px solid #ccc;
+  /* Optional: adds a border around the image preview */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.uploaded-image {
+  width: 100%;
+  /* Ensures the image scales to the container width */
+  height: 100%;
+  /* Ensures the image scales to the container height */
+  object-fit: cover;
+  /* Ensures the image covers the container without distortion */
+}
+
+.bubble-2 h4 {
+  margin-top: 15px !important;
+  margin-bottom: 5px !important;
+}
+
+.text-field {
+  border-radius: 50px;
+}
+
+.google-maps {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid #f5ced2;
+  border-radius: 30px;
+  background-color: #f2dcdf;
+}
+
+.google-places-autocomplete {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-of-places {
+  margin-top: 20px;
+  width: 60vw;
+}
+
+.list-of-places h4 {
+  margin-bottom: 15px !important;
+}
+
+.location-entry-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  /* Indicate that the entire box is clickable */
+}
+
+.location-entry-text {
+  display: flex;
+  max-width: 50vw;
+  align-items: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.delete-button {
+  margin-left: 10px;
+}
+
+.location-entry-box:hover {
+  background-color: #f0f0f0;
+  /* Change background on hover */
+}

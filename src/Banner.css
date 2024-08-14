@@ -1,0 +1,26 @@
+.banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px ;
+}
+
+
+@media (max-width: 800px) {
+    .banner {
+      display: inline-block;
+    }
+  }
+
+.country-selector,
+.category-selector {
+    width: fit-content;
+    margin: 0;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

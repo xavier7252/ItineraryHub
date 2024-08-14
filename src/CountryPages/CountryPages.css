@@ -1,0 +1,205 @@
+.App {
+    text-align: center;
+    display: grid;
+    background-color: rgb(243, 233, 234);
+    min-height: 100vh;
+}
+
+.logo {
+    background: url("https://editors.dexerto.com/wp-content/uploads/2024/01/08/Copy-of-dexerto-feature-images-with-correct-dimensions-2024-01-08T104309.679.jpg");
+    background-size: contain;
+    height: 5vh;
+    width: 10vw;
+    cursor: pointer;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.link {
+    color: #147c99;
+    align-items: start;
+}
+
+.top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .logo-box {
+    display: flex;
+    align-items: center;
+    /* Vertically center the logo within the box */
+  }
+  
+  .profile-box-1 {
+    position: relative;
+    display: inline-block;
+    align-content: end;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .person-icon {
+    color: black;
+  }
+  
+  .profile-text {
+    font-size: 20px;
+    color: black;
+    text-transform: none;
+  }
+  
+  .button-group {
+    position: absolute;
+    top: 68%;
+    left: 0;
+    z-index: 10;
+    margin-top: 8px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+  
+  .button-group .MuiButton-root {
+    width: 100%;
+    text-align: center;
+    text-transform: none;
+  }  
+
+.main-body {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.number-of-days-box {
+    /* display: flex; */
+    /* align-items: start;
+    margin-left: 40px; */
+}
+
+.number-of-days-value {
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.itinerary-box {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    overflow: hidden;
+    max-width: 100%;
+    padding: 20px;
+}
+
+/* Hide overflow cards for large screens */
+.itinerary-box>*:nth-child(n+9) {
+    display: none;
+}
+
+/* Larger screens */
+@media (max-width: 2400px) {
+    .itinerary-box {
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    .itinerary-box>*:nth-child(n+8) {
+        display: none;
+    }
+}
+
+@media (max-width: 2000px) {
+    .itinerary-box {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .itinerary-box>*:nth-child(n+7) {
+        display: none;
+    }
+}
+
+@media (max-width: 1600px) {
+    .itinerary-box {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .itinerary-box>*:nth-child(n+6) {
+        display: none;
+    }
+}
+
+/* Medium screens */
+@media (max-width: 1200px) {
+    .itinerary-box {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .itinerary-box>*:nth-child(n+5) {
+        display: none;
+    }
+}
+
+/* Smaller screens */
+@media (max-width: 900px) {
+    .itinerary-box {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .itinerary-box>*:nth-child(n+4) {
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    .itinerary-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .itinerary-box>*:nth-child(n+3) {
+        display: none;
+    }
+}
+
+@media (max-width: 350px) {
+    .itinerary-box {
+        grid-template-columns: 1fr;
+    }
+
+    .itinerary-box>*:nth-child(n+2) {
+        display: none;
+    }
+}
+
+
+.view-all-destinations-box {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

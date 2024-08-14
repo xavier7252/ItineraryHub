@@ -1,0 +1,46 @@
+.destination-card {
+  /* height: 300px;
+  width: 300px; */
+  height: 27rem;
+  border: 2px;
+  border-radius: 30px;
+  border-color: pink;
+  border-style: solid;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 10px;
+  transition: transform 100ms ease-in;
+  box-shadow: 0px 6px 18px -9px rgba(0, 0, 0, 0.75);
+}
+
+.destination-card:hover {
+  transform: scale(1.07);
+}
+
+.destination-card-image {
+  height: 70%;
+  object-fit:cover;
+  /* background: url(https://i.natgeofe.com/k/95d61645-a0c7-470f-b198-74a399dd5dfb/singapore-city_square.jpg) center center;
+  background-size: contain; */
+  width: 100%;
+}
+
+.destination-card-country {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.destination-card-description {
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.destination-card-link {
+  color: black;
+  text-decoration: none;
+}
