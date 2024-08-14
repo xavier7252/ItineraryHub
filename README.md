@@ -4,9 +4,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Environment Variables
 
-This project requires a Google Maps API key. To set up the project, create a `.env` file in the root directory and add the following line:
+This project requires a Google Maps API key. To set up the project, replace the following:
 
-GOOGLE_MAPS_API_KEY=your-google-maps-api-key-here
+'YOUR_API_KEY_HERE' replaced with 'your-google-maps-api-key-here'
 
 ## Available Scripts
 
